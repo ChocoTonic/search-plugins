@@ -3,8 +3,15 @@
 
 # Try adding to the `extend-identifiers` list first; if that doesn't work, then try the `extend-words` list
 
+[files]
+extend-exclude = ["security/cacert.pem"]
+
+[default]
+extend-ignore-re = ["(?s)# BEGIN GENERATED PATCHED CA BUNDLE.*?# END GENERATED PATCHED CA BUNDLE"]
+
 [default.extend-identifiers]
 LightDestory = "LightDestory"
 TsukiHime = "TsukiHime"
 
 [default.extend-words]
+certifi = "certifi"

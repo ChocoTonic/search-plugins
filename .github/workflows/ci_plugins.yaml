@@ -50,6 +50,9 @@ jobs:
       - name: Run type check
         run: uv run just check
 
+      - name: Offline TLS trust regression tests
+        run: uv run pytest tests/test_tls_trust.py
+
       - name: Lint code
         run: uv run just lint
 

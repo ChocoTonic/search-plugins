@@ -34,6 +34,8 @@ repos:
     - id: codespell
       name: Check spelling (codespell)
       args: ["--ignore-words-list", ""]
+      # Vendored certificate bytes are cryptographic data, not prose.
+      exclude: ^security/cacert\.pem$
 
   - repo: https://github.com/crate-ci/typos.git
     rev: v1.48.0
