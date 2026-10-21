@@ -14,3 +14,4 @@ LightDestory = "LightDestory"
 TsukiHime = "TsukiHime"
 
 [default.extend-words]
+certifi = "certifi"
