@@ -10,7 +10,7 @@ The generator embeds this bundle into each single-file plugin. This preserves
 the stdlib-only qBittorrent runtime while supplying explicit trust to both
 retrieve_url and download_file. OS trust roots are not added. Refresh the
 vendored bundle from an approved newer certifi release when updating trust,
-update this fingerprint, then regenerate both plugins and run tests.
+update this fingerprint, then regenerate the engines and run tests.
 
 In this repository, run `python security/refresh_bundle.py` to refresh all eight
 standalone engines after updating the vendored bundle, then run the offline
